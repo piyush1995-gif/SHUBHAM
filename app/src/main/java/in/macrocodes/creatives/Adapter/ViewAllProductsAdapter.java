@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import in.macrocodes.creatives.BuildConfig;
+import androidx.multidex.BuildConfig;
 import in.macrocodes.creatives.Fragments.HomeFragment;
 import in.macrocodes.creatives.Fragments.ProductInfoBottom;
 import in.macrocodes.creatives.Models.TrendingProducts;

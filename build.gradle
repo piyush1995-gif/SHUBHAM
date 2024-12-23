@@ -2,18 +2,22 @@
 buildscript {
     repositories {
         google()
+        mavenCentral() // Ensure you have this repository for accessing Firebase and other dependencies
         maven { url "https://www.jitpack.io" }
-        mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.2.1"
-        classpath "io.realm:realm-gradle-plugin:10.6.1"
-        classpath 'com.google.gms:google-services:4.3.10'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
-
+        classpath 'com.android.tools.build:gradle:8.1.1' // Keep this updated
+        classpath 'com.google.gms:google-services:4.3.15' // Updated version of Google Services
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2' // Updated version of Crashlytics
+        classpath "io.realm:realm-gradle-plugin:10.15.1" // Ensure you're using a recent version
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+
+plugins {
+    // Commenting out to avoid duplication in the buildscript section
+    // id 'com.google.gms.google-services' version '4.3.15' apply false
 }
 
 allprojects {
@@ -21,7 +25,7 @@ allprojects {
         google()
         mavenCentral()
         maven { url "https://www.jitpack.io" }
-        jcenter() // Warning: this repository is going to shut down soon
+        // jcenter() // It's deprecated; remove or comment it out if not needed
     }
 }
 

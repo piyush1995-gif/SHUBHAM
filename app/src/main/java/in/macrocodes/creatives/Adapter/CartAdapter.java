@@ -11,13 +11,14 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
+import androidx.multidex.BuildConfig;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import in.macrocodes.creatives.BuildConfig;
+
 import in.macrocodes.creatives.CartActivity;
 import in.macrocodes.creatives.DatabaseHelper.DatabaseHelper;
 import in.macrocodes.creatives.Fragments.ProductInfoBottom;

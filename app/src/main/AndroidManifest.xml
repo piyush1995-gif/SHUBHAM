@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.macrocodes.creatives">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -10,23 +10,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HandmadeAffiliate">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".BuyActivity" />
-        <activity android:name=".ImageViewActivity" />
-        <activity android:name=".ViewAllProductsActivity" />
-        <activity android:name=".ReportActivity" />
-        <activity android:name=".CartActivity" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- Specify exported based on your needs -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BuyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewAllProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="true" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:exported="true"> <!-- Add exported attribute -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
